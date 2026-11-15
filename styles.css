@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    height: 100vh;
+    background: linear-gradient(135deg, #1e21d8, #ca13ca);
+}
+
+.card {
+    width: 100%;
+    max-width: 500px;
+    background: #fff;
+    margin: 150px auto 20px;
+    border-radius: 20px;
+    padding: 40px 30px 70px;
+    
+    
+}
+
+.card h1 {
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    color: #1e21d8;
+
+}
+
+.card img {
+    width: 30px;
+  
+    margin-left: 10px;
+}
+
+.to-do{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #cccccca2;
+    padding-left: 20px;
+    border-radius: 30px;
+    margin-bottom: 25px;
+}
+
+.to-do input {
+    outline: none;
+    border: none;
+    flex: 1;
+    background: transparent;
+    padding: 10px;
+}
+
+.to-do button {
+    outline: none;
+    border: none;
+    background: #ca13ca;
+    padding: 16px 50px;
+    border-radius: 40px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+
+ul li {
+    list-style: none;
+    padding: 12px 8px 12px 50px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+}
+
+ul li::before {
+    content: '';
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    background-image: url(images/unchecked.png);
+    background-size: cover;
+    background-position: center;
+    top: 12px;
+    left: 8px;
+}
+
+
+ul li.checked {
+    color: #555;
+    text-decoration: line-through;
+}
+
+ul li.checked::before {
+    background-image: url('images/checked.png');
+}
+
+ul li span {
+    position: absolute;
+    right: 0;
+    top: 5px;
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+    color: #555;
+    line-height: 40px;
+    text-align: center;
+
+}
+ul li span:hover{
+    background: #e7e1e1;
+    border-radius: 50%;
+}
+
